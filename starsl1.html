@@ -26,12 +26,12 @@
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('http://202.125.144.115:8000/play/a01a/index.m3u8');
+    hls.loadSource('https://tamiltv.store/playlist/S21OVCswaWdHbjNCc2VsangyNTNxdE0wc1Z6azl5eUkwUktJck56akRacHhNYVVrV2d2T1BKMHNQV0ZQUDdtS0lUZEE3L25vUU1Lb3FHZVkrWDV1YnU2N2cwZlRHcDQwOG42dU9sVmxSRVk9/StarSportsSelect1HD/tracks-v1a1/mono.m3u8?data=ZEZlZXlSQWFCQzFlcW52SGVaRW5UQm93aVRYRldxcDBRUkthSVB6WjdscWNMQ3VkOGtzQzd3OTVtZ0pONGJsKzFDWDdvT0p3d1FXdC9EVGNuOVhXdDAwM0FTRkoyUkJ4Ymg5c1poZlh1cEY2djEwZWNBSWJ6ZTF5TG1tNkUzYjdYSkJXNkp6cHdKNVBOUDFJUFRzZ0JnPT0,&live=true&token=NlVsYnhrV21xakJ1bFRwalJFeUduSVBKOTNNQ05ndlQ0bkdJY2t3bHRJUS9IN0IzaFVPNFQ0ZWdaZVdjcnVHQWtRZEtlTlBiM0lDZDhnakpUYW13czAyakZyVUNKbG15K1VzdXhxK2swYnhEckdkV05sb3FHNlRRbSttWVVVV3U,');
     hls.attachMedia(video);
     video.play();
   }
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'http://202.125.144.115:8000/play/a01a/index.m3u8';
+    video.src = 'https://tamiltv.store/playlist/S21OVCswaWdHbjNCc2VsangyNTNxdE0wc1Z6azl5eUkwUktJck56akRacHhNYVVrV2d2T1BKMHNQV0ZQUDdtS0lUZEE3L25vUU1Lb3FHZVkrWDV1YnU2N2cwZlRHcDQwOG42dU9sVmxSRVk9/StarSportsSelect1HD/tracks-v1a1/mono.m3u8?data=ZEZlZXlSQWFCQzFlcW52SGVaRW5UQm93aVRYRldxcDBRUkthSVB6WjdscWNMQ3VkOGtzQzd3OTVtZ0pONGJsKzFDWDdvT0p3d1FXdC9EVGNuOVhXdDAwM0FTRkoyUkJ4Ymg5c1poZlh1cEY2djEwZWNBSWJ6ZTF5TG1tNkUzYjdYSkJXNkp6cHdKNVBOUDFJUFRzZ0JnPT0,&live=true&token=NlVsYnhrV21xakJ1bFRwalJFeUduSVBKOTNNQ05ndlQ0bkdJY2t3bHRJUS9IN0IzaFVPNFQ0ZWdaZVdjcnVHQWtRZEtlTlBiM0lDZDhnakpUYW13czAyakZyVUNKbG15K1VzdXhxK2swYnhEckdkV05sb3FHNlRRbSttWVVVV3U,';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
