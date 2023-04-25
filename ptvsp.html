@@ -26,12 +26,12 @@
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://daddy.yurendtv.biz.id/https://ddyx2.onlinewebtv.lol/ddyx2/premium450/tracks-v1a1/mono.m3u8');
+    hls.loadSource('https://tamiltv.store/playlist/S21OVCswaWdHbjNCc2VsangyNTNxdE0wc1Z6azl5eUkwUktJck56akRacHhNYVVrV2d2T1BKMHNQV0ZQUDdtS0lUZEE3L25vUU1Lb3FHZVkrWDV1YnU2N2cwZlRHcDQwOG42dU9sVmxSRVk9/PTVSports/tracks-v1a1/mono.m3u8?data=R0xsbStPU0JHeFVGYVBCYzJ4TXpPK2NkbVJvVkRuT00wZWk1R3pXa1VGUDMvTnBkdjJVS1p6ZExsOEpMVmFyQXlEM3RqeTZXam04RnFjbUhsVjlnRURiVGxmU0s4ekJ1TGRlRU44VEpaWDFZYmJyTTc3Y0Z2TzJNS0Q4REN4dzdUaElBRm9hZW5qS0cxR0p4MGJjSnFnPT0,&live=true&token=NlVsYnhrV21xakJ1bFRwalJFeUduSVBKOTNNQ05ndlQ0bkdJY2t3bHRJUS9IN0IzaFVPNFQ0ZWdaZVdjcnVHQWtRZEtlTlBiM0lDZDhnakpUYW13czAyakZyVUNKbG15K1VzdXhxK2swYnhEckdkV05sb3FHNlRRbSttWVVVV3U,');
     hls.attachMedia(video);
     video.play();
   }
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://daddy.yurendtv.biz.id/https://ddyx2.onlinewebtv.lol/ddyx2/premium450/tracks-v1a1/mono.m3u8';
+    video.src = 'https://tamiltv.store/playlist/S21OVCswaWdHbjNCc2VsangyNTNxdE0wc1Z6azl5eUkwUktJck56akRacHhNYVVrV2d2T1BKMHNQV0ZQUDdtS0lUZEE3L25vUU1Lb3FHZVkrWDV1YnU2N2cwZlRHcDQwOG42dU9sVmxSRVk9/PTVSports/tracks-v1a1/mono.m3u8?data=R0xsbStPU0JHeFVGYVBCYzJ4TXpPK2NkbVJvVkRuT00wZWk1R3pXa1VGUDMvTnBkdjJVS1p6ZExsOEpMVmFyQXlEM3RqeTZXam04RnFjbUhsVjlnRURiVGxmU0s4ekJ1TGRlRU44VEpaWDFZYmJyTTc3Y0Z2TzJNS0Q4REN4dzdUaElBRm9hZW5qS0cxR0p4MGJjSnFnPT0,&live=true&token=NlVsYnhrV21xakJ1bFRwalJFeUduSVBKOTNNQ05ndlQ0bkdJY2t3bHRJUS9IN0IzaFVPNFQ0ZWdaZVdjcnVHQWtRZEtlTlBiM0lDZDhnakpUYW13czAyakZyVUNKbG15K1VzdXhxK2swYnhEckdkV05sb3FHNlRRbSttWVVVV3U,';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
