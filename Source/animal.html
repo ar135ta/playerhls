@@ -26,12 +26,12 @@
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://delivery.ksa.my.id/stream/id_animalplanet/playlist.m3u8?token=ym1wtrp&v=20200807');
+    hls.loadSource('https://tamiltv.store/playlist/bUQ4VTFmRWI4WE5HRytRZVVDd1UyZVc0bVF6M095dlhGTFltNXU4Ti9JTDhwZVZBcDA3YlJGenByMjRCM0R1cDdmOGZFQTRQaTN0VjNsQlJJQzJJOVE9PQ,,/master.m3u8?token=MUJ1N2RUZzc3VXAyclFlb2lUUUtLcUVLMlV4R1lHTVc0b3hqRXZjYTNlcHY3ZjNaeTZFTkdpeUk2TWMxQXBYNkpyN1RLQWRlWHUycWtKSWxsY3Q4SDQ4U2ExL1l0NTZqWmw2NGVnTkhjRC81eTR3SnU1WlhwT3NsMWsyRjdrcTA,');
     hls.attachMedia(video);
     video.play();
   }
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://delivery.ksa.my.id/stream/id_animalplanet/playlist.m3u8?token=ym1wtrp&v=20200807';
+    video.src = 'https://tamiltv.store/playlist/bUQ4VTFmRWI4WE5HRytRZVVDd1UyZVc0bVF6M095dlhGTFltNXU4Ti9JTDhwZVZBcDA3YlJGenByMjRCM0R1cDdmOGZFQTRQaTN0VjNsQlJJQzJJOVE9PQ,,/master.m3u8?token=MUJ1N2RUZzc3VXAyclFlb2lUUUtLcUVLMlV4R1lHTVc0b3hqRXZjYTNlcHY3ZjNaeTZFTkdpeUk2TWMxQXBYNkpyN1RLQWRlWHUycWtKSWxsY3Q4SDQ4U2ExL1l0NTZqWmw2NGVnTkhjRC81eTR3SnU1WlhwT3NsMWsyRjdrcTA,';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
