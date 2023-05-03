@@ -26,12 +26,12 @@
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://cflive-esports-english.zee5.com/out/v1/c6ea36da68cc46608098d0a09a2be456/And_Flix_HD/index.m3u8');
+    hls.loadSource('https://news-live-cfgroup.zee5.com/out/v1/c6ea36da68cc46608098d0a09a2be456/And_Flix_HD/index.m3u8');
     hls.attachMedia(video);
     video.play();
   }
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://cflive-esports-english.zee5.com/out/v1/c6ea36da68cc46608098d0a09a2be456/And_Flix_HD/index.m3u8';
+    video.src = 'https://news-live-cfgroup.zee5.com/out/v1/c6ea36da68cc46608098d0a09a2be456/And_Flix_HD/index.m3u8';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
