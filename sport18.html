@@ -27,12 +27,12 @@
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://ranapk.xyz/VOOT/play.m3u8?id=Sports18_1_HD_voot_MOB');
+    hls.loadSource('https://crichd.gq/jiox/app/live/1984/null/index.m3u8');
     hls.attachMedia(video);
     video.play();
   }
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://ranapk.xyz/VOOT/play.m3u8?id=Sports18_1_HD_voot_MOB';
+    video.src = 'https://crichd.gq/jiox/app/live/1984/null/index.m3u8';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
