@@ -26,12 +26,12 @@
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://sulukway.github.io/ktv/stasion/andFlix.m3u8');
+    hls.loadSource('https://news-live-cfgroup.zee5.com/out/v1/1fdd621077c04a568628705e08b6363e/index_6.m3u8');
     hls.attachMedia(video);
     video.play();
   }
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://sulukway.github.io/ktv/stasion/andFlix.m3u8';
+    video.src = 'https://news-live-cfgroup.zee5.com/out/v1/1fdd621077c04a568628705e08b6363e/index_6.m3u8';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
